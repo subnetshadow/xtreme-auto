@@ -38,18 +38,18 @@ export default function V3Hero() {
       <div className="relative max-w-5xl mx-auto px-4 md:px-6 py-32 text-center">
         {/* Label */}
         <div className="inline-flex items-center gap-3 mb-8">
-          <span className="w-6 h-px bg-xad-gold/60" />
-          <span className="text-xad-gold text-xs font-semibold tracking-[0.3em] uppercase">
+          <span className="w-8 h-0.5 bg-xad-gold" />
+          <span className="text-xad-blue text-xs tracking-widest uppercase">
             Calgary Auto Detailing
           </span>
-          <span className="w-6 h-px bg-xad-gold/60" />
+          <span className="w-8 h-0.5 bg-xad-gold" />
         </div>
 
         {/* H1 — Large Centered */}
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-white leading-[1.0] tracking-tight mb-8">
           Premium Auto
           <br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-xad-gold via-xad-warm to-xad-gold">
+          <span className="text-xad-blue">
             Detailing
           </span>
           <br />

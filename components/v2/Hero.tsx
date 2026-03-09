@@ -9,11 +9,8 @@ export default function V2Hero() {
           <div>
             {/* Label */}
             <div className="inline-flex items-center gap-3 mb-8">
-              <div className="flex gap-1">
-                <span className="w-1.5 h-6 bg-xad-gold rounded-full" />
-                <span className="w-1.5 h-6 bg-xad-gold/40 rounded-full" />
-              </div>
-              <span className="text-xad-gold text-xs font-semibold tracking-widest uppercase">
+              <span className="w-8 h-0.5 bg-xad-gold" />
+              <span className="text-xad-blue text-xs tracking-widest uppercase">
                 Calgary's Premier Auto Detailers
               </span>
             </div>
@@ -21,7 +18,7 @@ export default function V2Hero() {
             {/* H1 */}
             <h1 className="text-4xl md:text-5xl xl:text-6xl font-black text-white leading-tight mb-6 tracking-tight">
               Premium Auto Detailing in Calgary —{' '}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-xad-gold to-xad-warm">
+              <span className="text-xad-blue">
                 Mobile & Studio
               </span>{' '}
               Services

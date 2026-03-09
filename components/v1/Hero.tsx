@@ -11,9 +11,14 @@ export default function V1Hero() {
         <div className="absolute top-1/4 right-8 w-px h-64 bg-gradient-to-b from-transparent via-xad-gold/20 to-transparent" />
         <div className="absolute bottom-1/4 right-24 w-px h-48 bg-gradient-to-b from-transparent via-xad-blue/20 to-transparent" />
         {/* Car image placeholder */}
-        <div className="absolute right-0 top-0 bottom-0 w-5/12 bg-gradient-to-l from-xad-medium/30 to-transparent flex items-center justify-center">
-          <div className="w-4/5 aspect-video bg-xad-medium/20 border border-white/5 rounded-sm flex items-center justify-center">
-            <span className="text-xad-muted text-sm">[ Car Image ]</span>
+        <div className="absolute right-0 top-0 bottom-0 w-5/12 flex items-center justify-center pr-8">
+          <div className="relative w-full" style={{ minHeight: '300px' }}>
+            <div className="absolute inset-0 bg-xad-dark rounded-sm" />
+            <div className="absolute inset-0 bg-gradient-to-br from-xad-dark via-xad-medium/40 to-xad-black rounded-sm" />
+            <div className="absolute inset-0 bg-gradient-to-t from-xad-black/80 via-transparent to-transparent rounded-sm" />
+            <div className="absolute inset-0 flex items-center justify-center">
+              <span className="text-white/30 text-sm font-medium tracking-widest">[ Car Image ]</span>
+            </div>
           </div>
         </div>
       </div>
@@ -22,8 +27,8 @@ export default function V1Hero() {
         <div className="max-w-3xl">
           {/* Label */}
           <div className="inline-flex items-center gap-2 mb-6">
-            <span className="w-8 h-px bg-xad-gold" />
-            <span className="text-xad-gold text-xs font-semibold tracking-widest uppercase">
+            <span className="w-8 h-0.5 bg-xad-gold" />
+            <span className="text-xad-blue text-xs tracking-widest uppercase">
               Calgary's #1 Auto Detailers
             </span>
           </div>
@@ -31,7 +36,7 @@ export default function V1Hero() {
           {/* H1 */}
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-white leading-[1.05] mb-6 tracking-tight">
             Premium Auto Detailing in Calgary —{' '}
-            <span className="text-xad-gold">Mobile & Studio</span> Services
+            <span className="text-xad-blue">Mobile & Studio</span> Services
           </h1>
 
           {/* Subtext */}

@@ -21,10 +21,12 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between h-16 md:h-18">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 shrink-0">
-            <span className="text-xad-gold font-black text-lg tracking-tight">XAD</span>
-            <span className="hidden sm:block text-white/30 text-base">|</span>
-            <span className="hidden sm:block text-white/60 text-xs font-semibold tracking-wider uppercase">
+          <Link href="/" className="flex items-center gap-3 shrink-0">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <rect width="32" height="32" rx="4" fill="#3CB0F5"/>
+              <path d="M8 8L16 16M16 16L24 8M16 16L8 24M16 16L24 24" stroke="white" strokeWidth="3" strokeLinecap="round"/>
+            </svg>
+            <span className="hidden sm:block text-white font-bold tracking-wider text-sm uppercase">
               Xtreme Auto Detailing
             </span>
           </Link>
