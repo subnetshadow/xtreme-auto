@@ -36,7 +36,7 @@ export default function ServicePageTemplate({
         {/* Hero */}
         <section className="relative min-h-[70vh] flex items-center pt-16 overflow-hidden">
           <div className="absolute inset-0">
-            <Image src={heroImage} alt={heroAlt} fill className="object-cover" priority quality={90} />
+            <Image src={heroImage} alt={heroAlt} fill sizes="100vw" className="object-cover" priority quality={80} />
             <div className="absolute inset-0 bg-xad-black/75" />
             <div className="absolute inset-0 bg-gradient-to-t from-xad-black via-xad-black/40 to-xad-black/60" />
           </div>
@@ -118,7 +118,7 @@ export default function ServicePageTemplate({
             <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
               {galleryImages.map((img, i) => (
                 <div key={i} className="relative aspect-square rounded-sm overflow-hidden group">
-                  <Image src={img.src} alt={img.alt} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+                  <Image src={img.src} alt={img.alt} fill sizes="(max-width: 768px) 50vw, 33vw" className="object-cover group-hover:scale-105 transition-transform duration-500" />
                 </div>
               ))}
             </div>

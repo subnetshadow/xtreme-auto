@@ -26,6 +26,7 @@ export default function BugattiSection() {
               src="/images/bugatti-chiron-after.jpeg"
               alt="Bugatti Chiron Pur Sport detailed by Xtreme Auto Detailing Calgary"
               fill
+              sizes="(max-width: 768px) 100vw, 66vw"
               className="object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-xad-black/60 to-transparent" />
@@ -38,16 +39,16 @@ export default function BugattiSection() {
 
           {/* Side images */}
           <div className="relative aspect-square rounded-sm overflow-hidden">
-            <Image src="/images/bugatti-drying-action.jpeg" alt="Detailing Bugatti Chiron" fill className="object-cover" />
+            <Image src="/images/bugatti-drying-action.jpeg" alt="Detailing Bugatti Chiron" fill sizes="(max-width: 768px) 50vw, 33vw" className="object-cover" />
           </div>
           <div className="relative aspect-square rounded-sm overflow-hidden">
-            <Image src="/images/bugatti-interior-steering.jpeg" alt="Bugatti Chiron interior" fill className="object-cover" />
+            <Image src="/images/bugatti-interior-steering.jpeg" alt="Bugatti Chiron interior" fill sizes="(max-width: 768px) 50vw, 33vw" className="object-cover" />
           </div>
           <div className="relative aspect-square rounded-sm overflow-hidden">
-            <Image src="/images/bugatti-w16-engine.jpeg" alt="Bugatti W16 engine detail" fill className="object-cover" />
+            <Image src="/images/bugatti-w16-engine.jpeg" alt="Bugatti W16 engine detail" fill sizes="(max-width: 768px) 50vw, 33vw" className="object-cover" />
           </div>
           <div className="relative aspect-square rounded-sm overflow-hidden">
-            <Image src="/images/bugatti-grille.jpeg" alt="Bugatti Chiron grille" fill className="object-cover" />
+            <Image src="/images/bugatti-grille.jpeg" alt="Bugatti Chiron grille" fill sizes="(max-width: 768px) 50vw, 33vw" className="object-cover" />
           </div>
         </div>
 

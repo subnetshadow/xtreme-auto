@@ -12,7 +12,8 @@ export default function V3Hero() {
           fill
           className="object-cover object-center"
           priority
-          quality={90}
+          sizes="100vw"
+          quality={80}
         />
         {/* Dark overlays */}
         <div className="absolute inset-0 bg-xad-black/70" />

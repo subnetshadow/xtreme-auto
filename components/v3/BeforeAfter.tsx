@@ -60,6 +60,7 @@ export default function V3BeforeAfter() {
                     src={item.beforeImg}
                     alt={`Before - ${item.label}`}
                     fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
                     className="object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-xad-black/80 to-transparent" />
@@ -77,6 +78,7 @@ export default function V3BeforeAfter() {
                     src={item.afterImg}
                     alt={`After - ${item.label}`}
                     fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
                     className="object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-xad-black/80 via-transparent to-transparent" />
