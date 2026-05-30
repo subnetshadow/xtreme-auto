@@ -65,11 +65,11 @@ export default function BookingSection() {
                 <span className="font-semibold">(587) 707-2736</span>
               </a>
               <a
-                href="mailto:xtreme.auto.detailing@gmail.com"
+                href="mailto:xtremedetailingpro@gmail.com"
                 className="flex items-center gap-3 text-white hover:text-xad-gold transition-colors duration-150"
               >
                 <span className="text-xad-muted text-xs w-12">Email</span>
-                <span className="font-semibold text-sm">xtreme.auto.detailing@gmail.com</span>
+                <span className="font-semibold text-sm">xtremedetailingpro@gmail.com</span>
               </a>
             </div>
 
