@@ -21,6 +21,14 @@ export const metadata: Metadata = {
     description:
       'Restore, protect, and elevate your vehicle with Calgary\'s trusted 5-star detailing professionals.',
     type: 'website',
+    locale: 'en_CA',
+    siteName: 'Xtreme Auto Detailing',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Xtreme Auto Detailing | Premium Auto Detailing in Calgary',
+    description:
+      'Calgary\'s trusted 5-star detailing professionals — ceramic coating, PPF, paint correction & mobile detailing.',
   },
 }
 

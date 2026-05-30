@@ -17,8 +17,55 @@ export const metadata = {
 }
 
 export default function HomePage() {
+  const businessSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'AutomotiveBusiness',
+    '@id': 'https://xtremedetailingyyc.ca/#business',
+    name: 'Xtreme Auto Detailing',
+    description:
+      "Calgary's premier mobile and studio auto detailing — ceramic coating, paint protection film, paint correction, interior & exterior detailing, window tinting, and headlight restoration.",
+    url: 'https://xtremedetailingyyc.ca',
+    telephone: '+1-587-707-2736',
+    email: 'xtremedetailingpro@gmail.com',
+    image: 'https://xtremedetailingyyc.ca/opengraph-image.jpg',
+    priceRange: '$$',
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Calgary',
+      addressRegion: 'AB',
+      addressCountry: 'CA',
+    },
+    geo: { '@type': 'GeoCoordinates', latitude: 51.0447, longitude: -114.0719 },
+    areaServed: ['Calgary', 'Airdrie', 'Cochrane', 'Chestermere', 'Okotoks'].map((c) => ({
+      '@type': 'City',
+      name: c,
+    })),
+    openingHoursSpecification: [
+      {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+        opens: '08:00',
+        closes: '19:00',
+      },
+      {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: 'Sunday',
+        opens: '09:00',
+        closes: '17:00',
+      },
+    ],
+    sameAs: [
+      'https://www.instagram.com/xtreme.auto.detailing/',
+      'https://www.tiktok.com/@xtreme.auto.detailing',
+    ],
+  }
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(businessSchema) }}
+      />
       <Header />
       <main>
         <Hero />
