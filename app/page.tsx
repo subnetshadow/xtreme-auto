@@ -20,14 +20,14 @@ export default function HomePage() {
   const businessSchema = {
     '@context': 'https://schema.org',
     '@type': 'AutomotiveBusiness',
-    '@id': 'https://xtremedetailingyyc.ca/#business',
+    '@id': 'https://www.xtremedetailingyyc.ca/#business',
     name: 'Xtreme Auto Detailing',
     description:
       "Calgary's premier mobile and studio auto detailing — ceramic coating, paint protection film, paint correction, interior & exterior detailing, window tinting, and headlight restoration.",
-    url: 'https://xtremedetailingyyc.ca',
+    url: 'https://www.xtremedetailingyyc.ca',
     telephone: '+1-587-707-2736',
     email: 'xtremedetailingpro@gmail.com',
-    image: 'https://xtremedetailingyyc.ca/opengraph-image.jpg',
+    image: 'https://www.xtremedetailingyyc.ca/opengraph-image.jpg',
     priceRange: '$$',
     address: {
       '@type': 'PostalAddress',

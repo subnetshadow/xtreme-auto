@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = 'https://xtremedetailingyyc.ca'
+  const base = 'https://www.xtremedetailingyyc.ca'
   const pages = [
     '',
     '/ceramic-coating-calgary',

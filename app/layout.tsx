@@ -10,7 +10,7 @@ const inter = localFont({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://xtremedetailingyyc.ca'),
+  metadataBase: new URL('https://www.xtremedetailingyyc.ca'),
   title: 'Xtreme Auto Detailing | Premium Auto Detailing in Calgary',
   description:
     'Calgary\'s trusted 5-star auto detailing professionals. Mobile & studio services including ceramic coatings, paint correction, interior & exterior detailing. Serving Calgary, Airdrie, Cochrane, Chestermere, and Okotoks.',
