@@ -7,6 +7,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/ceramic-coating-calgary',
     '/paint-correction-calgary',
     '/mobile-detailing-calgary',
+    '/interior-detailing-calgary',
+    '/headlight-restoration-calgary',
+    '/paint-protection-film-calgary',
+    '/window-tinting-calgary',
   ]
   return pages.map((p) => ({
     url: `${base}${p}`,

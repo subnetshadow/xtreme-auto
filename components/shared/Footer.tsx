@@ -1,11 +1,11 @@
 import Link from 'next/link'
 
 const navLinks = [
-  { label: 'Services', href: '#services' },
-  { label: 'Gallery', href: '#gallery' },
-  { label: 'Before & After', href: '#beforeafter' },
-  { label: 'Service Areas', href: '#areas' },
-  { label: 'Book Now', href: '#book' },
+  { label: 'Services', href: '/#services' },
+  { label: 'Gallery', href: '/#gallery' },
+  { label: 'Before & After', href: '/#beforeafter' },
+  { label: 'Service Areas', href: '/#areas' },
+  { label: 'Book Now', href: '/#book' },
 ]
 
 const serviceAreas = ['Calgary', 'Airdrie', 'Cochrane', 'Chestermere', 'Okotoks']
@@ -64,7 +64,7 @@ export default function Footer() {
               {serviceAreas.map((area) => (
                 <li key={area}>
                   <a
-                    href="#areas"
+                    href="/#areas"
                     className="text-xad-muted text-sm hover:text-white transition-colors duration-150 flex items-center gap-2"
                   >
                     <span className="w-1 h-1 rounded-full bg-xad-gold shrink-0" />

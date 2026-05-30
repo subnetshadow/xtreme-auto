@@ -4,11 +4,11 @@ import { useState } from 'react'
 import Image from 'next/image'
 
 const navLinks = [
-  { label: 'Services', href: '#services' },
-  { label: 'Gallery', href: '#gallery' },
-  { label: 'Before & After', href: '#beforeafter' },
-  { label: 'Service Areas', href: '#areas' },
-  { label: 'Contact', href: '#book' },
+  { label: 'Services', href: '/#services' },
+  { label: 'Gallery', href: '/#gallery' },
+  { label: 'Before & After', href: '/#beforeafter' },
+  { label: 'Service Areas', href: '/#areas' },
+  { label: 'Contact', href: '/#book' },
 ]
 
 export default function Header() {
@@ -54,7 +54,7 @@ export default function Header() {
               (587) 707-2736
             </a>
             <a
-              href="#book"
+              href="/#book"
               className="bg-xad-gold text-xad-black text-sm font-bold px-4 py-2 rounded-sm hover:bg-xad-warm transition-colors duration-200"
             >
               Book Now
@@ -102,7 +102,7 @@ export default function Header() {
                 (587) 707-2736
               </a>
               <a
-                href="#book"
+                href="/#book"
                 className="bg-xad-gold text-xad-black text-sm font-bold px-4 py-2.5 rounded-sm hover:bg-xad-warm transition-colors duration-200 text-center"
               >
                 Book Your Detail
