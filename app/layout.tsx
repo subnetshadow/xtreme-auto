@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://xtremedetailingyyc.ca'),
   title: 'Xtreme Auto Detailing | Premium Auto Detailing in Calgary',
   description:
     'Calgary\'s trusted 5-star auto detailing professionals. Mobile & studio services including ceramic coatings, paint correction, interior & exterior detailing. Serving Calgary, Airdrie, Cochrane, Chestermere, and Okotoks.',

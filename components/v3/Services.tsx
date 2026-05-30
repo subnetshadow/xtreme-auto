@@ -12,6 +12,7 @@ const services = [
   },
   {
     title: 'Ceramic Coatings',
+    href: '/ceramic-coating-calgary',
     description: 'Long-term gloss and protection with nano-ceramic technology.',
     color: 'xad-blue',
     icon: (
@@ -43,6 +44,7 @@ const services = [
   },
   {
     title: 'Mobile Detailing',
+    href: '/mobile-detailing-calgary',
     description: 'On-site service at home or work, anywhere in the Calgary region.',
     color: 'xad-gold',
     icon: (
@@ -56,6 +58,7 @@ const services = [
   },
   {
     title: 'Paint Correction',
+    href: '/paint-correction-calgary',
     description: 'Swirl, scratch & oxidation removal — multi-stage machine polishing.',
     color: 'xad-blue',
     icon: (
@@ -97,9 +100,12 @@ export default function V3Services() {
         {/* Horizontal Scrolling Cards */}
         <div className="overflow-x-auto pb-4 -mx-4 px-4 md:-mx-6 md:px-6">
           <div className="flex gap-5" style={{ width: 'max-content' }}>
-            {services.map((service, index) => (
-              <div
+            {services.map((service, index) => {
+              const CardTag: any = service.href ? 'a' : 'div'
+              return (
+              <CardTag
                 key={service.title}
+                {...(service.href ? { href: service.href } : {})}
                 className="group w-72 shrink-0 bg-xad-card border border-white/5 rounded-sm p-8 hover:border-xad-gold/30 transition-all duration-300 flex flex-col"
               >
                 {/* Index */}
@@ -122,14 +128,25 @@ export default function V3Services() {
                 {/* Description */}
                 <p className="text-xad-muted text-sm leading-relaxed flex-1">{service.description}</p>
 
+                {/* Learn more link for pages */}
+                {service.href && (
+                  <span className="mt-4 inline-flex items-center gap-1.5 text-xad-gold text-xs font-semibold">
+                    Learn more
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                  </span>
+                )}
+
                 {/* Bottom CTA */}
                 <div
                   className={`mt-6 h-px w-0 group-hover:w-full transition-all duration-500 ${
                     service.color === 'xad-gold' ? 'bg-xad-gold/40' : 'bg-xad-blue/40'
                   }`}
                 />
-              </div>
-            ))}
+              </CardTag>
+              )
+            })}
           </div>
         </div>
 
