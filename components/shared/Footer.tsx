@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 const navLinks = [
   { label: 'Services', href: '/#services' },
@@ -19,13 +20,18 @@ export default function Footer() {
         <div className="py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <div className="flex items-center gap-2 mb-4">
-              <span className="text-xad-gold font-black text-2xl tracking-tight">XAD</span>
-              <span className="text-white/20 text-xl">|</span>
-              <span className="text-white/60 text-sm font-semibold tracking-wider uppercase">
+            <a href="/" className="flex items-center gap-3 mb-4">
+              <Image
+                src="/images/logo-transparent.png"
+                alt="Xtreme Auto Detailing YYC"
+                width={44}
+                height={44}
+                className="object-contain"
+              />
+              <span className="text-white font-bold tracking-wider text-sm uppercase">
                 Xtreme Auto Detailing
               </span>
-            </div>
+            </a>
             <p className="text-xad-muted text-sm leading-relaxed max-w-sm mb-6">
               Restore, protect, and elevate your vehicle with Calgary's trusted 5-star detailing professionals.
               Mobile & studio services across Calgary and surrounding communities.
