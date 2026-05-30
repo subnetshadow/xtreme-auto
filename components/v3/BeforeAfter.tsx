@@ -1,18 +1,26 @@
+import Image from 'next/image'
+
 const items = [
   {
-    label: 'Paint Correction',
-    beforeNote: 'Heavy swirl marks, micro-scratches & oxidation across all painted surfaces',
-    afterNote: 'Mirror-like paint depth fully restored — glass-smooth finish with no imperfections',
+    label: 'Paint Correction — BMW M3',
+    beforeNote: 'Heavy foam pre-soak, swirl marks & oxidation across all painted surfaces',
+    afterNote: 'Mirror-like finish restored — Competition Green paint depth fully revealed',
+    beforeImg: '/images/bmw-m3-foam-before.jpeg',
+    afterImg: '/images/bmw-m3-green-after.jpeg',
   },
   {
-    label: 'Interior Detailing',
-    beforeNote: 'Ground-in stains, accumulated grime, odour-saturated upholstery and surfaces',
-    afterNote: 'Steam-sanitized, stain-free, fresh-smelling interior restored to showroom condition',
+    label: 'Full Detail — Bugatti Chiron',
+    beforeNote: 'Foam cannon pre-wash on $4M+ hypercar — careful, methodical approach required',
+    afterNote: 'Immaculate finish on the final 1500hp Chiron — showroom condition restored',
+    beforeImg: '/images/bugatti-foam-action.jpeg',
+    afterImg: '/images/bugatti-chiron-after.jpeg',
   },
   {
-    label: 'Ceramic Coating',
-    beforeNote: 'Dull, oxidized paint surface with no protection against UV or environmental damage',
-    afterNote: 'Glossy, hydrophobic ceramic layer delivering years of protection and showroom shine',
+    label: 'Exterior Wash — Lamborghini Huracán',
+    beforeNote: 'Full snow foam treatment in the Alberta Badlands — extreme mobile detailing',
+    afterNote: 'Deep gloss paint restored — carbon fibre and orange accents perfectly cleaned',
+    beforeImg: '/images/lambo-foam-before.jpeg',
+    afterImg: '/images/lambo-wash-closeup.jpeg',
   },
 ]
 
@@ -33,7 +41,7 @@ export default function V3BeforeAfter() {
           </p>
         </div>
 
-        {/* Full-width Stacked Layout */}
+        {/* Stacked Layout */}
         <div className="flex flex-col gap-6">
           {items.map((item, index) => (
             <div key={item.label} className="group">
@@ -47,33 +55,35 @@ export default function V3BeforeAfter() {
               {/* Full-width Before / After */}
               <div className="grid md:grid-cols-2 gap-3">
                 {/* Before */}
-                <div className="relative aspect-video bg-xad-medium/20 border border-white/5 rounded-sm overflow-hidden flex items-end">
+                <div className="relative aspect-video rounded-sm overflow-hidden">
+                  <Image
+                    src={item.beforeImg}
+                    alt={`Before - ${item.label}`}
+                    fill
+                    className="object-cover"
+                  />
                   <div className="absolute inset-0 bg-gradient-to-t from-xad-black/80 to-transparent" />
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <p className="text-white/5 text-9xl font-black">B</p>
-                  </div>
-                  <div className="relative w-full p-6">
-                    <div className="flex items-center justify-between">
-                      <span className="text-xs font-bold text-xad-orange bg-xad-orange/20 border border-xad-orange/30 px-3 py-1 rounded-sm">
-                        BEFORE
-                      </span>
-                    </div>
+                  <div className="absolute bottom-0 w-full p-6">
+                    <span className="text-xs font-bold text-xad-orange bg-xad-orange/20 border border-xad-orange/30 px-3 py-1 rounded-sm">
+                      BEFORE
+                    </span>
                     <p className="text-xad-muted/70 text-xs mt-2 leading-relaxed max-w-sm">{item.beforeNote}</p>
                   </div>
                 </div>
 
                 {/* After */}
-                <div className="relative aspect-video bg-xad-card border border-xad-gold/10 rounded-sm overflow-hidden flex items-end">
-                  <div className="absolute inset-0 bg-gradient-to-t from-xad-black/80 via-xad-black/20 to-transparent" />
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <p className="text-xad-gold/5 text-9xl font-black">A</p>
-                  </div>
-                  <div className="relative w-full p-6">
-                    <div className="flex items-center justify-between">
-                      <span className="text-xs font-bold text-xad-gold bg-xad-gold/20 border border-xad-gold/30 px-3 py-1 rounded-sm">
-                        AFTER
-                      </span>
-                    </div>
+                <div className="relative aspect-video rounded-sm overflow-hidden">
+                  <Image
+                    src={item.afterImg}
+                    alt={`After - ${item.label}`}
+                    fill
+                    className="object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-xad-black/80 via-transparent to-transparent" />
+                  <div className="absolute bottom-0 w-full p-6">
+                    <span className="text-xs font-bold text-xad-gold bg-xad-gold/20 border border-xad-gold/30 px-3 py-1 rounded-sm">
+                      AFTER
+                    </span>
                     <p className="text-xad-muted/70 text-xs mt-2 leading-relaxed max-w-sm">{item.afterNote}</p>
                   </div>
                 </div>
@@ -86,12 +96,10 @@ export default function V3BeforeAfter() {
         <div className="mt-16 flex flex-col md:flex-row items-center justify-between gap-6 border-t border-white/5 pt-10">
           <div>
             <p className="text-white text-2xl font-bold mb-1">Beautifully detailed. Inside and out.</p>
-            <p className="text-xad-muted text-sm">
-              See our complete portfolio of transformations.
-            </p>
+            <p className="text-xad-muted text-sm">See our complete portfolio of transformations.</p>
           </div>
           <a
-            href="#portfolio"
+            href="#gallery"
             className="shrink-0 bg-xad-gold text-xad-black font-bold px-8 py-4 rounded-sm hover:bg-xad-warm transition-colors duration-200"
           >
             See Full Gallery

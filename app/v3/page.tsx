@@ -2,58 +2,45 @@ import Header from '@/components/shared/Header'
 import Footer from '@/components/shared/Footer'
 import Hero from '@/components/v3/Hero'
 import Services from '@/components/v3/Services'
+import BugattiSection from '@/components/v3/BugattiSection'
 import BeforeAfter from '@/components/v3/BeforeAfter'
+import Gallery from '@/components/v3/Gallery'
 import WhyUs from '@/components/v3/WhyUs'
 import Testimonials from '@/components/v3/Testimonials'
 import ServiceAreas from '@/components/v3/ServiceAreas'
-import Link from 'next/link'
+import BookingSection from '@/components/v3/BookingSection'
 
 export const metadata = {
-  title: 'Version 3 — Modern & Bold | Xtreme Auto Detailing',
+  title: 'Xtreme Auto Detailing YYC | Calgary Mobile Detailing & Ceramic Coating',
   description:
-    'Homepage Version 3: Modern, bold typography. Centered hero, horizontal services, alternating why-us, carousel testimonials.',
+    'Calgary\'s premier auto detailing studio. Mobile detailing, paint correction, ceramic coatings & headlight restoration. Trusted by owners of Bugatti, Lamborghini, McLaren & more. Serving Calgary, Airdrie, Cochrane, Chestermere & Okotoks.',
 }
 
 export default function V3Page() {
   return (
     <>
-      {/* Version indicator banner */}
-      <div className="fixed bottom-4 right-4 z-50 flex flex-col items-end gap-2">
-        <div className="bg-xad-card border border-xad-orange/30 rounded-sm px-4 py-2.5 shadow-xl shadow-black/50 flex items-center gap-3">
-          <span className="text-xad-warm text-xs font-bold tracking-widest">V3</span>
-          <span className="text-white/50 text-xs">Modern & Bold</span>
-        </div>
-        <Link
-          href="/"
-          className="bg-xad-dark border border-white/10 rounded-sm px-3 py-1.5 text-xad-muted text-xs hover:text-white hover:border-white/30 transition-colors duration-200 flex items-center gap-1.5"
-        >
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-            <path d="M19 12H5M12 19l-7-7 7-7" />
-          </svg>
-          All Versions
-        </Link>
-      </div>
-
       <Header />
       <main>
         <Hero />
         <Services />
+        <BugattiSection />
         <BeforeAfter />
+        <Gallery />
         <WhyUs />
         <Testimonials />
         <ServiceAreas />
+        <BookingSection />
 
-        {/* Bold Typography CTA Section */}
+        {/* Final CTA */}
         <section className="bg-xad-dark overflow-hidden py-24">
           <div className="max-w-7xl mx-auto px-4 md:px-6">
-            {/* Large typographic statement */}
-            <div className="relative mb-12">
+            <div className="relative text-center">
               <div className="absolute -top-16 left-0 right-0 text-center select-none pointer-events-none">
                 <span className="text-[120px] md:text-[200px] font-black text-white/[0.02] leading-none tracking-tighter">
                   XAD
                 </span>
               </div>
-              <div className="relative text-center">
+              <div className="relative">
                 <p className="text-xad-gold text-xs font-semibold tracking-[0.4em] uppercase mb-6">
                   Transform Your Vehicle
                 </p>
