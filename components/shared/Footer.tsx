@@ -2,12 +2,10 @@ import Link from 'next/link'
 
 const navLinks = [
   { label: 'Services', href: '#services' },
-  { label: 'Packages & Pricing', href: '#pricing' },
-  { label: 'Portfolio', href: '#portfolio' },
+  { label: 'Gallery', href: '#gallery' },
+  { label: 'Before & After', href: '#beforeafter' },
   { label: 'Service Areas', href: '#areas' },
-  { label: 'Blog', href: '#blog' },
-  { label: 'Contact', href: '#contact' },
-  { label: 'Legal', href: '#legal' },
+  { label: 'Book Now', href: '#book' },
 ]
 
 const serviceAreas = ['Calgary', 'Airdrie', 'Cochrane', 'Chestermere', 'Okotoks']
