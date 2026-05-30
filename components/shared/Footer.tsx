@@ -5,6 +5,7 @@ const navLinks = [
   { label: 'Gallery', href: '/#gallery' },
   { label: 'Before & After', href: '/#beforeafter' },
   { label: 'Service Areas', href: '/#areas' },
+  { label: 'FAQ', href: '/faq' },
   { label: 'Book Now', href: '/#book' },
 ]
 
@@ -77,15 +78,28 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-white/5 py-6 flex flex-col md:flex-row items-center justify-between gap-3">
-          <p className="text-xad-muted text-sm">
-            © XAD. Xtreme Auto Detailing 2025. All rights reserved.
+        <div className="border-t border-white/5 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
+          <p className="text-xad-muted text-sm text-center md:text-left">
+            © {new Date().getFullYear()} Xtreme Auto Detailing. All rights reserved.
           </p>
+          <div className="flex items-center gap-5">
+            <a href="/privacy" className="text-xad-muted text-sm hover:text-white transition-colors duration-150">
+              Privacy Policy
+            </a>
+            <a href="/terms" className="text-xad-muted text-sm hover:text-white transition-colors duration-150">
+              Terms
+            </a>
+          </div>
           <p className="text-xad-muted/40 text-xs">
-            Supported by{' '}
-            <span className="text-xad-muted/60 hover:text-xad-gold transition-colors cursor-pointer">
+            Powered by{' '}
+            <a
+              href="https://tacticsdigital.ca/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xad-muted/60 hover:text-xad-gold transition-colors"
+            >
               Tactics Digital YYC
-            </span>
+            </a>
           </p>
         </div>
       </div>

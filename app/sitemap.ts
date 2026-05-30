@@ -11,11 +11,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/headlight-restoration-calgary',
     '/paint-protection-film-calgary',
     '/window-tinting-calgary',
+    '/faq',
+    '/privacy',
+    '/terms',
   ]
+  const lowPriority = ['/privacy', '/terms']
   return pages.map((p) => ({
     url: `${base}${p}`,
     lastModified: new Date(),
     changeFrequency: 'monthly' as const,
-    priority: p === '' ? 1 : 0.8,
+    priority: p === '' ? 1 : lowPriority.includes(p) ? 0.3 : 0.8,
   }))
 }

@@ -8,6 +8,7 @@ const navLinks = [
   { label: 'Gallery', href: '/#gallery' },
   { label: 'Before & After', href: '/#beforeafter' },
   { label: 'Service Areas', href: '/#areas' },
+  { label: 'FAQ', href: '/faq' },
   { label: 'Contact', href: '/#book' },
 ]
 
