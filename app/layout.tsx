@@ -1,5 +1,13 @@
 import type { Metadata } from 'next'
+import localFont from 'next/font/local'
 import './globals.css'
+
+const inter = localFont({
+  src: './fonts/inter-var.woff2',
+  display: 'swap',
+  variable: '--font-inter',
+  weight: '100 900',
+})
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://xtremedetailingyyc.ca'),
@@ -22,7 +30,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={inter.variable}>
       <body>{children}</body>
     </html>
   )
