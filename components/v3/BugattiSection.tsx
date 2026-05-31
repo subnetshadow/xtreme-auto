@@ -19,14 +19,14 @@ export default function BugattiSection() {
         </div>
 
         {/* Photo grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mb-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 md:grid-rows-2 gap-3 mb-8 md:h-[560px]">
           {/* Large feature image */}
-          <div className="col-span-2 row-span-2 relative aspect-[4/3] rounded-sm overflow-hidden">
+          <div className="col-span-2 row-span-2 relative rounded-sm overflow-hidden aspect-[4/3] md:aspect-auto md:h-full">
             <Image
               src="/images/bugatti-chiron-after.jpeg"
               alt="Bugatti Chiron Pur Sport detailed by Xtreme Auto Detailing Calgary"
               fill
-              sizes="(max-width: 768px) 100vw, 66vw"
+              sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-xad-black/60 to-transparent" />
@@ -38,17 +38,17 @@ export default function BugattiSection() {
           </div>
 
           {/* Side images */}
-          <div className="relative aspect-square rounded-sm overflow-hidden">
-            <Image src="/images/bugatti-drying-action.jpeg" alt="Detailing Bugatti Chiron" fill sizes="(max-width: 768px) 50vw, 33vw" className="object-cover" />
+          <div className="relative rounded-sm overflow-hidden aspect-square md:aspect-auto md:h-full">
+            <Image src="/images/bugatti-drying-action.jpeg" alt="Detailing Bugatti Chiron" fill sizes="(max-width: 768px) 50vw, 25vw" className="object-cover" />
           </div>
-          <div className="relative aspect-square rounded-sm overflow-hidden">
-            <Image src="/images/bugatti-interior-steering.jpeg" alt="Bugatti Chiron interior" fill sizes="(max-width: 768px) 50vw, 33vw" className="object-cover" />
+          <div className="relative rounded-sm overflow-hidden aspect-square md:aspect-auto md:h-full">
+            <Image src="/images/bugatti-interior-steering.jpeg" alt="Bugatti Chiron interior" fill sizes="(max-width: 768px) 50vw, 25vw" className="object-cover" />
           </div>
-          <div className="relative aspect-square rounded-sm overflow-hidden">
-            <Image src="/images/bugatti-w16-engine.jpeg" alt="Bugatti W16 engine detail" fill sizes="(max-width: 768px) 50vw, 33vw" className="object-cover" />
+          <div className="relative rounded-sm overflow-hidden aspect-square md:aspect-auto md:h-full">
+            <Image src="/images/bugatti-w16-engine.jpeg" alt="Bugatti W16 engine detail" fill sizes="(max-width: 768px) 50vw, 25vw" className="object-cover" />
           </div>
-          <div className="relative aspect-square rounded-sm overflow-hidden">
-            <Image src="/images/bugatti-grille.jpeg" alt="Bugatti Chiron grille" fill sizes="(max-width: 768px) 50vw, 33vw" className="object-cover" />
+          <div className="relative rounded-sm overflow-hidden aspect-square md:aspect-auto md:h-full">
+            <Image src="/images/bugatti-grille.jpeg" alt="Bugatti Chiron grille" fill sizes="(max-width: 768px) 50vw, 25vw" className="object-cover" />
           </div>
         </div>
 
