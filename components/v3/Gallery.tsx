@@ -19,6 +19,8 @@ const galleryItems = [
   { src: '/images/bugatti-interior-steering.jpeg', label: 'Bugatti Chiron Interior', tag: 'Interior Detail' },
   { src: '/images/mclaren-interior-alcantara.jpeg', label: 'McLaren Interior', tag: 'Interior Detail' },
   { src: '/images/vw-atlas-studio.jpeg', label: 'VW Atlas', tag: 'Studio Detail' },
+  { src: '/images/mclaren-570s-orange-front.jpeg', label: 'McLaren 570S', tag: 'Exterior Detail' },
+  { src: '/images/audi-rs-mobile.jpeg', label: 'Audi RS', tag: 'Mobile Detail' },
 ]
 
 export default function V3Gallery() {
@@ -40,14 +42,14 @@ export default function V3Gallery() {
           </div>
         </div>
 
-        {/* Masonry-style grid */}
-        <div className="columns-2 md:columns-3 lg:columns-4 gap-3 space-y-3">
+        {/* Uniform grid */}
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
           {galleryItems.map((item, index) => (
             <div
               key={index}
-              className="group relative break-inside-avoid overflow-hidden rounded-sm bg-xad-card"
+              className="group relative overflow-hidden rounded-sm bg-xad-card"
             >
-              <div className={`relative ${index % 5 === 0 ? 'aspect-[3/4]' : index % 3 === 0 ? 'aspect-video' : 'aspect-square'} overflow-hidden`}>
+              <div className="relative aspect-square overflow-hidden">
                 <Image
                   src={item.src}
                   alt={item.label}
