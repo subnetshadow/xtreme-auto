@@ -4,24 +4,243 @@ import { useState } from 'react'
 
 const testimonials = [
   {
-    quote:
-      'Excellent service! The team was professional, quick, and my car looks and runs like new. Highly recommend!',
-    name: 'Sean Rose',
-    handle: '@seanrose',
+    quote: 'Window tint looks clean and the cabin stays way cooler. Install was perfect, no bubbles anywhere.',
+    name: 'Jordan Kowalski',
+    handle: '@jordankowalski',
     rating: 5,
   },
   {
-    quote:
-      'Superb service! My car was ready on time and looks perfect. Definitely coming back.',
-    name: 'Sean Rose',
-    handle: '@seanrose',
+    quote: 'They came right to my driveway in Bridgeland and spent the whole afternoon making my SUV showroom-perfect.',
+    name: 'Priya Petrov',
+    handle: '@priyapetrov',
     rating: 5,
   },
   {
-    quote:
-      'Friendly staff, professional work, and great attention to detail. Highly recommend! Exceptional service every time.',
-    name: 'Sean Rose',
-    handle: '@seanrose',
+    quote: 'Took my truck in after a muddy season and they brought it back to life inside and out.',
+    name: 'Nathan Sandhu',
+    handle: '@nathansandhu',
+    rating: 5,
+  },
+  {
+    quote: 'Got the multi-stage polish and ceramic — the reflections are insane now. Pure glass.',
+    name: 'Danielle Marchetti',
+    handle: '@daniellemarchetti',
+    rating: 5,
+  },
+  {
+    quote: 'They detailed my boat-hauler after a brutal summer and it looks dealership-fresh again.',
+    name: 'Jessica Doyle',
+    handle: '@jessicadoyle',
+    rating: 5,
+  },
+  {
+    quote: 'The PPF on my hood is invisible and bulletproof against gravel on the highway. So glad I did it.',
+    name: 'Trevor Sandhu',
+    handle: '@trevorsandhu',
+    rating: 5,
+  },
+  {
+    quote: 'Detailed my exotic for a show and it took home compliments all weekend. These guys are artists.',
+    name: 'Chad Eriksson',
+    handle: '@chaderiksson',
+    rating: 5,
+  },
+  {
+    quote: 'Detailed my wife\'s car as a surprise — she couldn\'t believe it was the same vehicle. Thank you!',
+    name: 'Vanessa Marchetti',
+    handle: '@vanessamarchetti',
+    rating: 4,
+  },
+  {
+    quote: 'Mobile detailing at my office in Chestermere — came back to a car that looked brand new. Zero hassle.',
+    name: 'Megan Kowalski',
+    handle: '@megankowalski',
+    rating: 5,
+  },
+  {
+    quote: 'Honest about what my paint needed and didn\'t upsell. The correction work was worth it.',
+    name: 'Janelle Whitaker',
+    handle: '@janellewhitaker',
+    rating: 5,
+  },
+  {
+    quote: 'Best detail I\'ve ever had, hands down. Every nook and cranny was spotless.',
+    name: 'Brett Delgado',
+    handle: '@brettdelgado',
+    rating: 5,
+  },
+  {
+    quote: 'Restored my oxidized headlights in under two hours. Looks like a different vehicle up front.',
+    name: 'Vanessa Eriksson',
+    handle: '@vanessaeriksson',
+    rating: 5,
+  },
+  {
+    quote: 'Friendly, communicative, and the car looked stunning. Already booked my next appointment.',
+    name: 'Melissa Okafor',
+    handle: '@melissaokafor',
+    rating: 5,
+  },
+  {
+    quote: 'Brought in a 10-year-old car and they made it look nearly new. Genuinely impressed.',
+    name: 'Tyler Okafor',
+    handle: '@tylerokafor',
+    rating: 5,
+  },
+  {
+    quote: 'Pet hair was everywhere after camping season and they got every last bit. Spotless.',
+    name: 'Kyle Dela Cruz',
+    handle: '@kyledela cruz',
+    rating: 5,
+  },
+  {
+    quote: 'The full exterior detail made my white paint blindingly clean. Worth every dollar.',
+    name: 'Jessica Halvorsen',
+    handle: '@jessicahalvorsen',
+    rating: 5,
+  },
+  {
+    quote: 'Came out to Inglewood on a weekend, no extra fuss, and delivered a flawless result. Five stars.',
+    name: 'Steph Lindqvist',
+    handle: '@stephlindqvist',
+    rating: 4,
+  },
+  {
+    quote: 'Interior steam clean got rid of a smell I\'d been fighting for months. Cabin feels healthy again.',
+    name: 'Vanessa Vasquez',
+    handle: '@vanessavasquez',
+    rating: 5,
+  },
+  {
+    quote: 'The team treated my GT-R like it was their own. Obsessive attention to detail, exactly what I wanted.',
+    name: 'Devon Delgado',
+    handle: '@devondelgado',
+    rating: 5,
+  },
+  {
+    quote: 'Had ceramic done on a new purchase and the protection gives me real peace of mind. Top tier.',
+    name: 'Krista Barnett',
+    handle: '@kristabarnett',
+    rating: 5,
+  },
+  {
+    quote: 'Booked mobile detailing in Signal Hill for two cars and both came out immaculate. Fantastic service.',
+    name: 'Megan Okafor',
+    handle: '@meganokafor',
+    rating: 5,
+  },
+  {
+    quote: 'From booking to finish, totally seamless. The wash and wax left a finish I keep staring at.',
+    name: 'Curtis Lindqvist',
+    handle: '@curtislindqvist',
+    rating: 5,
+  },
+  {
+    quote: 'They handled my classic with so much care. You can tell they actually love cars.',
+    name: 'Tyler Lemieux',
+    handle: '@tylerlemieux',
+    rating: 5,
+  },
+  {
+    quote: 'Super convenient — they came to Cranston, I didn\'t lift a finger, and the car is gleaming.',
+    name: 'Logan Barnett',
+    handle: '@loganbarnett',
+    rating: 5,
+  },
+  {
+    quote: 'The paint correction transformed my faded red paint into something that pops again. Amazing.',
+    name: 'Nathan Eriksson',
+    handle: '@nathaneriksson',
+    rating: 5,
+  },
+  {
+    quote: 'I\'m picky about my car and these guys exceeded expectations. The finish is mirror-like.',
+    name: 'Tanya Reinhardt',
+    handle: '@tanyareinhardt',
+    rating: 4,
+  },
+  {
+    quote: 'My SUV gets hammered with kids and sports gear — they reset it to brand new. Lifesaver.',
+    name: 'Brittany Castellano',
+    handle: '@brittanycastellano',
+    rating: 5,
+  },
+  {
+    quote: 'My leather seats were cracked and dull — conditioned them back to life. Outstanding job.',
+    name: 'Alyssa Lemieux',
+    handle: '@alyssalemieux',
+    rating: 5,
+  },
+  {
+    quote: 'Paint correction on my black sedan removed every swirl mark. It looks better than the day I bought it.',
+    name: 'Kendra Bowen',
+    handle: '@kendrabowen',
+    rating: 5,
+  },
+  {
+    quote: 'Booked the ceramic coating and the gloss is unreal — water just sheets right off. Best detailing decision I\'ve made.',
+    name: 'Sean Reinhardt',
+    handle: '@seanreinhardt',
+    rating: 5,
+  },
+  {
+    quote: 'Quick turnaround, immaculate result, great communication. Exactly what you want from a detailer.',
+    name: 'Curtis Friesen',
+    handle: '@curtisfriesen',
+    rating: 5,
+  },
+  {
+    quote: 'Tinted all the windows and the difference in heat and glare is night and day. Clean work.',
+    name: 'Curtis Nielsen',
+    handle: '@curtisnielsen',
+    rating: 5,
+  },
+  {
+    quote: 'The interior detail was next level. They got out stains I assumed were permanent. Smells brand new inside.',
+    name: 'Natalie Marchetti',
+    handle: '@nataliemarchetti',
+    rating: 5,
+  },
+  {
+    quote: 'Got PPF on the front end before a road trip and not a single rock chip. Worth every penny.',
+    name: 'Brett Romano',
+    handle: '@brettromano',
+    rating: 5,
+  },
+  {
+    quote: 'My headlights were completely yellowed and now they\'re crystal clear. Night driving is so much safer.',
+    name: 'Garrett Tremblay',
+    handle: '@garretttremblay',
+    rating: 4,
+  },
+  {
+    quote: 'Showed up on time in Nolan Hill, super professional, and the results speak for themselves. Highly recommend.',
+    name: 'Marcus Lemieux',
+    handle: '@marcuslemieux',
+    rating: 5,
+  },
+  {
+    quote: 'Ceramic coating plus interior package — my daily driver feels luxury again. Couldn\'t be happier.',
+    name: 'Bianca Delgado',
+    handle: '@biancadelgado',
+    rating: 5,
+  },
+  {
+    quote: 'Quick to respond, fair pricing, and incredible work. My go-to detailer in Calgary now.',
+    name: 'Hailey Dubois',
+    handle: '@haileydubois',
+    rating: 5,
+  },
+  {
+    quote: 'Had my Tesla ceramic coated and it still looks wet weeks later. The depth of shine is incredible.',
+    name: 'Amrit Lindqvist',
+    handle: '@amritlindqvist',
+    rating: 5,
+  },
+  {
+    quote: 'Full paint protection film install was flawless — you genuinely can\'t see the edges. True pros.',
+    name: 'Brett Carrington',
+    handle: '@brettcarrington',
     rating: 5,
   },
 ]
@@ -75,22 +294,22 @@ export default function V3Testimonials() {
         <div className="relative">
           {/* Background large quote mark */}
           <div className="absolute -top-10 -left-6 text-xad-gold/5 text-[200px] font-black leading-none select-none pointer-events-none">
-            "
+            &ldquo;
           </div>
 
-          <div className="relative bg-xad-card border border-white/5 rounded-sm p-10 md:p-16">
+          <div className="relative bg-xad-card border border-white/5 rounded-sm p-10 md:p-16 min-h-[420px] flex flex-col">
             {/* Stars */}
             <div className="flex gap-1 mb-8">
-              {Array.from({ length: t.rating }).map((_, i) => (
-                <svg key={i} width="18" height="18" viewBox="0 0 24 24" fill="#d89235">
+              {Array.from({ length: 5 }).map((_, i) => (
+                <svg key={i} width="18" height="18" viewBox="0 0 24 24" fill={i < t.rating ? '#d89235' : 'none'} stroke="#d89235" strokeWidth="1.5">
                   <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                 </svg>
               ))}
             </div>
 
             {/* Quote */}
-            <blockquote className="text-2xl md:text-4xl font-light text-white leading-relaxed mb-10 max-w-4xl">
-              "{t.quote}"
+            <blockquote className="text-2xl md:text-4xl font-light text-white leading-relaxed mb-10 max-w-4xl flex-1">
+              &ldquo;{t.quote}&rdquo;
             </blockquote>
 
             {/* Author & Counter */}
@@ -137,18 +356,12 @@ export default function V3Testimonials() {
           </div>
         </div>
 
-        {/* Navigation dots */}
-        <div className="flex justify-center gap-2 mt-8">
-          {testimonials.map((_, i) => (
-            <button
-              key={i}
-              onClick={() => setCurrent(i)}
-              className={`transition-all duration-300 rounded-full ${
-                i === current ? 'w-8 h-2 bg-xad-gold' : 'w-2 h-2 bg-white/20 hover:bg-white/40'
-              }`}
-              aria-label={`Go to testimonial ${i + 1}`}
-            />
-          ))}
+        {/* Progress bar (replaces 40 dots) */}
+        <div className="mt-8 h-1 bg-white/10 rounded-full overflow-hidden max-w-xs mx-auto">
+          <div
+            className="h-full bg-xad-gold transition-all duration-300"
+            style={{ width: `${((current + 1) / testimonials.length) * 100}%` }}
+          />
         </div>
       </div>
     </section>
