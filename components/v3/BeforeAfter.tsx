@@ -47,8 +47,8 @@ export default function V3BeforeAfter() {
             <div key={item.label} className="group">
               {/* Label Row */}
               <div className="flex items-center gap-4 mb-4">
-                <span className="text-xad-muted/30 text-xs font-bold">{String(index + 1).padStart(2, '0')}</span>
-                <span className="text-white/60 text-sm font-semibold tracking-wider uppercase">{item.label}</span>
+                <span className="text-xad-gold text-xs font-bold">{String(index + 1).padStart(2, '0')}</span>
+                <span className="text-white text-sm font-semibold tracking-wider uppercase">{item.label}</span>
                 <div className="flex-1 h-px bg-white/5" />
               </div>
 
@@ -63,12 +63,12 @@ export default function V3BeforeAfter() {
                     sizes="(max-width: 768px) 100vw, 50vw"
                     className="object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-xad-black/80 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-xad-black via-xad-black/40 to-transparent" />
                   <div className="absolute bottom-0 w-full p-6">
                     <span className="text-xs font-bold text-xad-orange bg-xad-orange/20 border border-xad-orange/30 px-3 py-1 rounded-sm">
                       BEFORE
                     </span>
-                    <p className="text-xad-muted/70 text-xs mt-2 leading-relaxed max-w-sm">{item.beforeNote}</p>
+                    <p className="text-white/85 text-xs mt-2 leading-relaxed max-w-sm">{item.beforeNote}</p>
                   </div>
                 </div>
 
@@ -81,12 +81,12 @@ export default function V3BeforeAfter() {
                     sizes="(max-width: 768px) 100vw, 50vw"
                     className="object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-xad-black/80 via-transparent to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-xad-black via-xad-black/40 to-transparent" />
                   <div className="absolute bottom-0 w-full p-6">
                     <span className="text-xs font-bold text-xad-gold bg-xad-gold/20 border border-xad-gold/30 px-3 py-1 rounded-sm">
                       AFTER
                     </span>
-                    <p className="text-xad-muted/70 text-xs mt-2 leading-relaxed max-w-sm">{item.afterNote}</p>
+                    <p className="text-white/85 text-xs mt-2 leading-relaxed max-w-sm">{item.afterNote}</p>
                   </div>
                 </div>
               </div>
@@ -101,7 +101,7 @@ export default function V3BeforeAfter() {
             <p className="text-xad-muted text-sm">See our complete portfolio of transformations.</p>
           </div>
           <a
-            href="#gallery"
+            href="/#gallery"
             className="shrink-0 bg-xad-gold text-xad-black font-bold px-8 py-4 rounded-sm hover:bg-xad-warm transition-colors duration-200"
           >
             See Full Gallery
