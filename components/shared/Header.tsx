@@ -20,17 +20,15 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between h-16 md:h-18">
           {/* Logo */}
-          <a href="/" className="flex items-center gap-3 shrink-0">
+          <a href="/" className="flex items-center shrink-0">
             <Image
-              src="/images/logo-transparent.png"
+              src="/images/logo-horizontal.png"
               alt="Xtreme Auto Detailing YYC"
-              width={40}
-              height={40}
-              className="object-contain"
+              width={1200}
+              height={557}
+              priority
+              className="h-9 md:h-11 w-auto object-contain"
             />
-            <span className="hidden sm:block text-white font-bold tracking-wider text-sm uppercase">
-              Xtreme Auto Detailing
-            </span>
           </a>
 
           {/* Desktop Nav */}

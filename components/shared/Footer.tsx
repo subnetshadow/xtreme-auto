@@ -20,17 +20,14 @@ export default function Footer() {
         <div className="py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <a href="/" className="flex items-center gap-3 mb-4">
+            <a href="/" className="inline-flex items-center mb-4">
               <Image
-                src="/images/logo-transparent.png"
+                src="/images/logo-horizontal.png"
                 alt="Xtreme Auto Detailing YYC"
-                width={44}
-                height={44}
-                className="object-contain"
+                width={1200}
+                height={557}
+                className="h-12 w-auto object-contain"
               />
-              <span className="text-white font-bold tracking-wider text-sm uppercase">
-                Xtreme Auto Detailing
-              </span>
             </a>
             <p className="text-xad-muted text-sm leading-relaxed max-w-sm mb-6">
               Restore, protect, and elevate your vehicle with Calgary's trusted 5-star detailing professionals.
